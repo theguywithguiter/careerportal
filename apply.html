@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apply | CareerPortal</title>
+
+    <link rel="stylesheet" href="css/apply.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CareerPortal
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="jobs.html">Jobs</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section class="apply-section">
+
+        <div class="apply-card">
+
+            <h1 id="jobTitle">Loading...</h1>
+
+<div class="job-summary">
+
+    <p id="companyName"></p>
+
+    <div class="job-meta">
+
+        <span id="jobLocation"></span>
+
+        <span id="jobSalary"></span>
+
+        <span id="jobExperience"></span>
+
+    </div>
+
+</div>
+
+            <form id="applyForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required>
+
+                <input
+                    type="text"
+                    placeholder="Current Location"
+                    required>
+
+                <input
+                    type="text"
+                    placeholder="Highest Qualification"
+                    required>
+
+                <label class="resume-label">
+
+                    Upload Resume
+
+                </label>
+
+                <input
+                    type="file"
+                    required>
+
+                <textarea
+
+                    placeholder="Cover Letter (Optional)"
+
+                    rows="5"
+
+                ></textarea>
+
+                <button type="submit">
+
+                    Submit Application
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="data/jobs.js"></script>
+    <script src="js/apply.js"></script>
+
+</body>
+
+</html>

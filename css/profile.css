@@ -1,0 +1,369 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#09090d;
+    color:#fff;
+
+}
+
+/* 
+NAVBAR
+ */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 8%;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    background:#0d0d12;
+
+    position:sticky;
+    top:0;
+    z-index:100;
+
+}
+
+.logo a{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:42px;
+
+    font-weight:800;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+.navbar a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:20px;
+
+}
+
+.navbar a:hover,
+.navbar .active{
+
+    color:#8b5cf6;
+
+}
+
+#logoutBtn{
+
+    width:170px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#8b5cf6;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#logoutBtn:hover{
+
+    background:#7c3aed;
+
+}
+
+/* 
+PROFILE SECTION
+ */
+
+.profile-section{
+
+    width:min(1200px,92%);
+
+    margin:60px auto;
+
+}
+
+/* 
+PROFILE CARD
+ */
+
+.profile-card{
+
+    background:#17171f;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.avatar{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:#8b5cf6;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+#userName{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+#userEmail{
+
+    color:#b8b8b8;
+
+    margin-bottom:40px;
+
+}
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.stat{
+
+    background:#111117;
+
+    padding:28px;
+
+    border-radius:18px;
+
+}
+
+.stat h3{
+
+    color:#8b5cf6;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.stat span{
+
+    color:#b8b8b8;
+
+}
+
+/* 
+SAVED JOBS
+ */
+
+.saved-section h2{
+
+    margin-bottom:50px;
+    text-align: center;
+
+    font-size:32px;
+
+}
+
+#savedJobsList{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+}
+
+.saved-job{
+
+    background:#17171f;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.saved-job:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#8b5cf6;
+
+    box-shadow:0 20px 45px rgba(139,92,246,.18);
+
+}
+
+.saved-job h3{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.saved-job p{
+
+    color:#b8b8b8;
+
+    margin:8px 0;
+
+}
+
+.saved-job .salary{
+
+    color:#8b5cf6;
+
+    font-weight:700;
+
+}
+
+.saved-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:22px;
+
+}
+
+.saved-buttons button{
+
+    flex:1;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.view-btn{
+
+    background:#8b5cf6;
+
+    color:#fff;
+
+}
+
+.view-btn:hover{
+
+    background:#7c3aed;
+
+}
+
+.remove-btn{
+
+    background:#22222d;
+
+    color:#ff6b81;
+
+    border:1px solid #ff6b81;
+
+}
+
+.remove-btn:hover{
+
+    background:#ff6b81;
+
+    color:#fff;
+
+}
+
+/* 
+RESPONSIVE
+ */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:25px;
+
+    }
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

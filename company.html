@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Details | CareerPortal</title>
+
+    <link rel="stylesheet" href="css/company.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- 
+NAVBAR
+ -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <a href="index.html">
+
+            CareerPortal
+
+        </a>
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="jobs.html">Jobs</a></li>
+
+        <li><a href="companies.html" class="active">Companies</a></li>
+
+        <li><a href="profile.html">Profile</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- 
+BACKGROUND GLOW
+ -->
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<!-- 
+COMPANY DETAILS
+ -->
+
+<section class="company-container">
+
+<a href="companies.html" class="back-btn">
+
+← Back to Companies
+
+</a>
+
+<div class="company-card">
+
+<div class="company-top">
+
+<img
+id="companyLogo"
+class="company-logo"
+src=""
+alt="Company Logo">
+
+<div>
+
+<h1 id="companyName">
+
+Loading...
+
+</h1>
+
+<div class="rating">
+
+⭐ <span id="companyRating"></span>
+
+</div>
+
+<p class="industry">
+
+💻 <span id="companyIndustry"></span>
+
+</p>
+
+<p class="location">
+
+📍 <span id="companyLocation"></span>
+
+</p>
+
+<p class="employees">
+
+👨‍💻 <span id="companyEmployees"></span>
+
+</p>
+
+<p class="jobs">
+
+💼 <span id="companyJobs"></span>
+
+Open Jobs
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 
+ABOUT
+-->
+
+<div class="info-card">
+
+<h2>
+
+About Company
+
+</h2>
+
+<p id="companyAbout">
+
+Loading...
+
+</p>
+
+</div>
+
+<!-- 
+BENEFITS
+ -->
+
+<div class="info-card">
+
+<h2>
+
+Benefits
+
+</h2>
+
+<div class="benefits">
+
+<div>✔ Hybrid Work</div>
+
+<div>✔ Health Insurance</div>
+
+<div>✔ Flexible Hours</div>
+
+<div>✔ Learning Budget</div>
+
+<div>✔ Free Meals</div>
+
+<div>✔ Stock Options</div>
+
+</div>
+
+</div>
+
+<!-- 
+OPEN POSITIONS
+-->
+
+<div class="info-card">
+
+<h2>
+
+Open Positions
+
+</h2>
+
+<div id="openJobs">
+
+</div>
+
+</div>
+
+<div class="center">
+
+<button id="exploreBtn">
+
+Explore Jobs
+
+</button>
+
+</div>
+
+</section>
+
+<script src="data/companies.js"></script>
+
+<script src="data/jobs.js"></script>
+
+<script src="js/company.js"></script>
+
+</body>
+
+</html>

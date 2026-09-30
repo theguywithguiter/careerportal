@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | CareerPortal</title>
+
+<link rel="stylesheet" href="css/profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===========================
+NAVBAR
+=========================== -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <a href="index.html">CareerPortal</a>
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="jobs.html">Jobs</a></li>
+
+        <li><a href="profile.html" class="active">Profile</a></li>
+
+        <li><a href="applications.html">Applications</a></li>
+
+    </ul>
+
+    <button id="logoutBtn">
+
+        Logout
+
+    </button>
+
+</nav>
+
+<!-- ===========================
+PROFILE
+=========================== -->
+
+<section class="profile-section">
+
+<div class="profile-card">
+
+<div class="avatar">
+
+👤
+
+</div>
+
+<h2 id="userName"></h2>
+
+<p id="userEmail"></p>
+
+<div class="stats">
+
+<div class="stat">
+
+<h3>26+</h3>
+
+<span>Jobs Available</span>
+
+</div>
+
+<div class="stat">
+
+<h3 id="appliedCount">0</h3>
+
+<span>Applied Jobs</span>
+
+</div>
+
+<div class="stat">
+
+<h3 id="savedCount">0</h3>
+
+<span>Saved Jobs</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===========================
+SAVED JOBS
+=========================== -->
+
+<div class="saved-section">
+
+<h2>
+
+Saved Jobs
+
+</h2>
+
+<div id="savedJobsList">
+
+</div>
+
+</div>
+
+</section>
+
+<script src="data/jobs.js"></script>
+
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+/* 
+GOOGLE FONT
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* 
+RESET
+ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#09090d;
+    color:#fff;
+    overflow-x:hidden;
+
+}
+
+/* 
+NAVBAR
+ */
+
+.navbar{
+
+    width:100%;
+    height:80px;
+
+    padding:0 8%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    background:#09090d;
+
+}
+
+.logo a{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:40px;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover,
+.navbar .active{
+
+    color:#8b5cf6;
+
+}
+
+/* 
+HERO
+ */
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    color:#b8b8b8;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+APPLICATIONS
+=========================== */
+
+.applications-section{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding-bottom:80px;
+
+}
+
+#applicationsContainer{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+
+    gap:30px;
+
+}
+
+/* 
+CARDS (APPLICANTS WALA SECTION)
+ */
+
+.application-card{
+
+    background:#17171f;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.application-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#8b5cf6;
+
+    box-shadow:0 20px 45px rgba(139,92,246,.22);
+
+}
+
+.application-card h2{
+
+    margin-bottom:10px;
+
+    font-size:28px;
+
+}
+
+.application-card h3{
+
+    color:#8b5cf6;
+
+    margin-bottom:18px;
+
+    font-size:20px;
+
+}
+
+.application-card p{
+
+    margin:10px 0;
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
+/* 
+STATUS
+ */
+
+.status{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    margin-top:18px;
+
+    font-weight:600;
+
+    font-size:14px;
+
+}
+
+.review{
+
+    background:#ffc10722;
+
+    color:#FFC107;
+
+}
+
+.shortlisted{
+
+    background:#2196f322;
+
+    color:#42A5F5;
+
+}
+
+.interview{
+
+    background:#00c85322;
+
+    color:#00E676;
+
+}
+
+.rejected{
+
+    background:#ff174422;
+
+    color:#FF5252;
+
+}
+
+.received{
+
+    background:#8b5cf622;
+
+    color:#8b5cf6;
+
+}
+
+/* 
+BUTTON
+ */
+
+.application-card button{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-top:22px;
+
+    transition:.3s;
+
+}
+
+.application-card button:hover{
+
+    background:#7c3aed;
+
+}
+
+/* 
+EMPTY
+ */
+
+.empty-state{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:80px 20px;
+
+}
+
+.empty-card{
+
+    width:700px;
+
+    background:#17171f;
+
+    border-radius:25px;
+
+    padding:60px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.empty-icon{
+
+    font-size:70px;
+
+    margin-bottom:25px;
+
+}
+
+.empty-card h2{
+
+    margin-bottom:18px;
+
+}
+
+.empty-card p{
+
+    color:#b8b8b8;
+
+    margin-bottom:30px;
+
+}
+
+.browse-btn{
+
+    display:inline-block;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.browse-btn:hover{
+
+    background:#7c3aed;
+
+}
+
+/* 
+RESPONSIVE
+ */
+
+@media(max-width:900px){
+
+.navbar{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px;
+
+gap:20px;
+
+}
+
+.navbar ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:20px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+#applicationsContainer{
+
+grid-template-columns:1fr;
+
+}
+
+}
